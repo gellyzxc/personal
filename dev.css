@@ -1,0 +1,27 @@
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+.magenta {
+    background-color: magenta;
+}
+
+.BORDER {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.flex {
+    display: flex;
+}
+
+.absolute {
+    display: absolute;
+}
+
+.margin {
+    margin: 10vh 1vh 1vh 1vh;
+}

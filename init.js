@@ -1,0 +1,1 @@
+$(".site").onepage_scroll();

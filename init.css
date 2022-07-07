@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "OLGAC"; /*a name to be used later*/
+  src: url("Olgac.ttf"); /*URL to font*/
+}
+
+@media all and (orientation: portrait) {
+  .about {
+    height: 10vh;
+  }
+
+  .contact {
+    height: 8vh;
+  }
+
+  .contact-a {
+    font-family: "Olgac";
+    color: white;
+    font-size: 2.1rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    width: 60vw;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroll-down {
+    width: 10vw;
+  }
+}
+
+@media all and (orientation: landscape) {
+  body {
+    width: 100%;
+  }
+
+  .about {
+    height: 15vh;
+  }
+
+  .contact {
+    height: 15vh;
+  }
+
+  .contact-a {
+    font-family: "Olgac";
+    color: white;
+    font-size: 4.1rem;
+  }
+
+  .contact-buttons {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+
+  .scroll-down {
+    width: 3vw;
+  }
+}
+
+body {
+  background-color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.site {
+  height: 310vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.static-block {
+  height: 100vh;
+  width: 100%;
+}
+
+.footer {
+  height: 5vh;
+  width: 100%;
+  /* background-color: magenta; */
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-family: "Olgac";
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logo {
+  height: 20vh;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-down {
+  height: 3vh;
+  position: absolute;
+  bottom: 1vh;
+  animation: up-down 3s infinite;
+}
+
+@keyframes up-down {
+  0% {
+    bottom: 1vh;
+  }
+
+  50% {
+    bottom: 2vh;
+  }
+
+  100% {
+    bottom: 1vh;
+  }
+}
+
+.about-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-text {
+  margin-top: 5vh;
+  font-family: "Olgac";
+  color: white;
+  font-size: 1.8rem;
+  width: 60vw;
+}
+
+.under {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
